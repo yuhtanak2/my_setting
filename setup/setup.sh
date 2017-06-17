@@ -41,6 +41,7 @@ if [ ! -e ~/.anyenv ]; then
   git clone git://github.com/aereal/anyenv-exec.git $(anyenv root)/plugins/anyenv-exe
   git clone https://github.com/znz/anyenv-git.git $(anyenv root)/plugins/anyenv-git
   anyenv update
+  anyenv git gc
 fi
 
 shopt -s dotglob
