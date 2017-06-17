@@ -36,6 +36,16 @@ fi
 if [ ! -e ~/.anyenv ]; then
   echo '-git clone anyenv-----------------'
   git clone https://github.com/riywo/anyenv  ~/.anyenv
+  
+  # pyenvの導入
+  anyenv install pyenv
+  exec $SHELL -l
+  # anaconda2、anaconda3の導入
+  LIST=`pyenv install -l`
+  for ANA_VIERVION in anaconda2 anaconda3
+  do 
+    pyenv install `echo ${LIST} | grep ${ANA_VIERVION} | sort -nr | head -n 1 | sed -e 's/^[ ]*//g'`
+  done
 fi
 
 shopt -s dotglob
