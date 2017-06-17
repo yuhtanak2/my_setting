@@ -74,3 +74,5 @@ fi
 # 権限変更
 echo '-chmod start-------------------------'
 sudo chmod -R 777 ~/shell/
+
+exec $SHELL -l
