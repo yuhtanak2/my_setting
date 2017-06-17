@@ -1,0 +1,16 @@
+[user]
+        name = 
+        email =
+[color]
+        ui = auto
+        status = auto
+        branch = auto
+        diff = auto
+        interactive = auto
+        grep = auto
+[core]
+        editor = vim
+[merge]
+        tool = vimdiff
+[alias]
+        fetchp = fetch -p
