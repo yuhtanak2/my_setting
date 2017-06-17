@@ -99,8 +99,6 @@ setopt hist_reduce_blanks
 # 補完候補が複数あるときに自動的に一覧表示する
 setopt auto_menu
 
-plugins=(git cf)
-
 #########################
 # コマンドオプション
 #########################
