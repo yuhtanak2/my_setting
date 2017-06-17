@@ -29,7 +29,7 @@ fi
 if [ ! -e ~/.oh-my-zsh/plugins ]; then
   echo '-git clone oh-my-zsh-----------------'
   mkdir -p 
-~/.oh-my-zsh/plugins  git clone https://github.com/frodenas/cf-zsh-autocomplete-plugin.git ~/.oh-my-zsh/plugins/cf
+  ~/.oh-my-zsh/plugins  git clone https://github.com/frodenas/cf-zsh-autocomplete-plugin.git ~/.oh-my-zsh/plugins/cf
 fi
 
 # anyenvの追加
