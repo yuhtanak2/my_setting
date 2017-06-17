@@ -42,6 +42,11 @@ if [ ! -e ~/.anyenv ]; then
   git clone https://github.com/znz/anyenv-git.git $(anyenv root)/plugins/anyenv-git
   anyenv update
   anyenv git gc
+  anyenv install plenv
+  anyenv install pyenv
+  anyenv install rbenv
+  anyenv install phpenv
+  anyenv install ndenv
 fi
 
 shopt -s dotglob
