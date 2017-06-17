@@ -1,5 +1,6 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+export PATH="/usr/local/opt/curl/bin:$PATH"
 
 # OSX のPATHは設定が変になるので対策
 if [ -x /usr/libexec/path_helper ]; then
