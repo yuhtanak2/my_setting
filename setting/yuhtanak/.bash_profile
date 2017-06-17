@@ -7,6 +7,12 @@ if [ -x /usr/libexec/path_helper ]; then
 fi
 
 #########################
+# anyenv
+#########################
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
+#########################
 # Elasticsearch
 #########################
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin/elasticsearch-plugin
