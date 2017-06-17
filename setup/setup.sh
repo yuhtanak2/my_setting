@@ -16,25 +16,6 @@ if [ "${STATUS}" != "private" -a "${STATUS}" != "miniy" -a "x${STATUS}" != "x" ]
   exit 2
 fi
 
-################
-# anyenvの導入
-# $1 導入したいenv
-# $2 導入したいversion
-################
-env_install () {
-  # envの導入
-  anyenv install ${1}
-  exec $SHELL -l
-
-  # anaconda2、anaconda3の導入
-  LIST=`pyenv install -l`
-  for ANA_VIERVION in ${2}
-  do 
-    pyenv install `echo ${LIST} | grep ${ANA_VIERVION} | sort -nr | head -n 1 | sed -e 's/^[ ]*//g'`
-  done
-}
-
-
 # sudo権限をが使えるか確認
 sudo echo '-shell start-------------------------'
 
@@ -55,9 +36,6 @@ fi
 if [ ! -e ~/.anyenv ]; then
   echo '-git clone anyenv-----------------'
   git clone https://github.com/riywo/anyenv  ~/.anyenv
-  
-  # pyenvの導入
-  env_install pyenv "anaconda2 anaconda3"
 fi
 
 shopt -s dotglob
