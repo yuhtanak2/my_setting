@@ -28,8 +28,14 @@ fi
 # oh-my-zshの追加
 if [ ! -e ~/.oh-my-zsh/plugins ]; then
   echo '-git clone oh-my-zsh-----------------'
-  mkdir -p ~/.oh-my-zsh/plugins
-  git clone https://github.com/frodenas/cf-zsh-autocomplete-plugin.git ~/.oh-my-zsh/plugins/cf
+  mkdir -p 
+~/.oh-my-zsh/plugins  git clone https://github.com/frodenas/cf-zsh-autocomplete-plugin.git ~/.oh-my-zsh/plugins/cf
+fi
+
+# anyenvの追加
+if [ ! -e ~/.anyenv ]; then
+  echo '-git clone anyenv-----------------'
+  git clone https://github.com/riywo/anyenv  ~/.anyenv
 fi
 
 shopt -s dotglob
