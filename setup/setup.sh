@@ -40,13 +40,13 @@ if [ ! -e ~/.anyenv ]; then
   git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
   git clone git://github.com/aereal/anyenv-exec.git $(anyenv root)/plugins/anyenv-exe
   git clone https://github.com/znz/anyenv-git.git $(anyenv root)/plugins/anyenv-git
-  anyenv update
-  anyenv git gc
   anyenv install plenv
   anyenv install pyenv
   anyenv install rbenv
   anyenv install phpenv
   anyenv install ndenv
+  anyenv update
+  anyenv git gc
 fi
 
 shopt -s dotglob
