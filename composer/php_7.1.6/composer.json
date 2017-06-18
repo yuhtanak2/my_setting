@@ -5,6 +5,7 @@
         "laravel/installer": "*",
         "laravel/tinker": "^1.0",
         "phpmd/phpmd": "^2.6",
-        "fabpot/php-cs-fixer": "^2.3"
+        "fabpot/php-cs-fixer": "^2.3",
+        "friendsofphp/php-cs-fixer": "^2.3"
     }   
 }
