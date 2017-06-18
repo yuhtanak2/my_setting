@@ -4,7 +4,7 @@
         "phpunit/phpunit": "*",
         "laravel/installer": "*",
         "laravel/tinker": "^1.0",
-        "friendsofphp/php-cs-fixer": "^2.3",
-        "phpmd/phpmd": "^2.6"
-    }
+        "phpmd/phpmd": "^2.6",
+        "fabpot/php-cs-fixer": "^2.3"
+    }   
 }
