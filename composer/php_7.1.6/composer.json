@@ -1,0 +1,10 @@
+{
+    "require": {
+        "laravel/valet": "^2.0",
+        "phpunit/phpunit": "*",
+        "laravel/installer": "*",
+        "laravel/tinker": "^1.0",
+        "friendsofphp/php-cs-fixer": "^2.3",
+        "phpmd/phpmd": "^2.6"
+    }
+}
